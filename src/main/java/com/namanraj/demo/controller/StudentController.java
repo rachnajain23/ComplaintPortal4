@@ -47,6 +47,7 @@ public class StudentController
 	@RequestMapping("/register-success")
 	public ModelAndView registerSuccess(Student student) {
 		ModelAndView mv = new ModelAndView();
+		studentrepo.save(student);
 		String email = student.getEmail();
 		if(email.endsWith("@iiitb.org")) {
 			if(studentrepo.findByRollAndRoom(student.getRoll(), student.getRoom()) != null) {
