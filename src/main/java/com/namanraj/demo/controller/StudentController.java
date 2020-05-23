@@ -77,7 +77,7 @@ public class StudentController
 	@RequestMapping("/change")
 	public ModelAndView change() {
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("redirect:/changepassword");
+		mv.setViewName("/changepassword");
 		return mv;
 	}
 	
@@ -86,6 +86,7 @@ public class StudentController
 								 @RequestParam("newpass") String newpass) {
 		
 		ModelAndView mv = new ModelAndView();
+		System.out.println("controller----"+roll);
 		Student student = studentrepo.findByRoll(roll);
 		if(student.getPassword().equals(oldpass)) {
 			studentrepo.updatePassword(newpass, roll);

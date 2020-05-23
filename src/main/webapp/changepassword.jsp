@@ -14,15 +14,15 @@
      
  	 response.setHeader("Cache-Control" , "no-cache , no-store , must-revalidate");   
    
-      if(session.getAttribute("username") == null){
+      /* if(session.getAttribute("username") == null){
      	 response.sendRedirect("/studentlogin");
-      }
+      } */
 %>
 
 <div class="container" align="right">
   <a  href="/studentlogout" class="btn btn-info" role="button">Log Out</a>
 </div>
-<h1>Hello <%= (String)session.getAttribute("username") %> </h1>
+<h1>Hello temporary user </h1>
 
 <div class="container">
 <div class="row">
