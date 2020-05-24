@@ -18,7 +18,7 @@
 
 <div class="sidenav">
          <div class="login-main-text">
-            <h2>Hello, Unregistered Student <br> </h2>
+            <h2>Hello Student <br> </h2>
             <br>
             <p>Enroll yourself to register Complaints!</p>
          </div>

@@ -62,12 +62,13 @@
 				<h1 style="font-size: 48px; margin-top:20% ">Welcome Admin!</h1>
 		  		<p>You can Perform Following Operations : </p> 		
 			</div>
+			<br>
 		  <div class="col-sm-3 col-md-3"><a href="/adminlogout"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Logout</button></a></div>
 		</div>
 		<div class="container" style="margin-top: 2%;">
-			<div class="col-sm-3 col-md-3"><a href = "/addStudent"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Add Student</button></a></div>
+			<div class="col-sm-3 col-md-3"><img src="/images/addstudent.jpg" style="height:500px;width: 500px" ><a href = "/addStudent"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Add Student</button></a></div>
 			<div class="col-sm-3 col-md-3"></div>
-			<div class="col-sm-3 col-md-3"><a href = "/updateStudent"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Update Student</button></a></div>
+			<div class="col-sm-3 col-md-3"><img src="/images/updatestudent.jpg" style="height:500px;width: 500px" ><a href = "/updateStudent"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Update Student</button></a></div>
 		</div>
 	</body>
 </html>

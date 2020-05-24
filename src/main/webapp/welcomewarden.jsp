@@ -54,6 +54,7 @@
 	</head>
 	<body>
 
+
 		<div class="container">
 			<div class="col-sm-3 col-md-3"></div>
 			<div class="col-sm-3 col-md-6">
@@ -62,12 +63,10 @@
 			</div>
 		  <div class="col-sm-3 col-md-3"><a href = "/wardenlogout"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Logout</button></a></div>
 		</div>
-		<div class="container-fluid" style="margin-top: 2%;">
-			<div class="col-md-2"></div>
-			<div class="col-sm-3 col-md-4"><img src="http://photogallery.iiitb.ac.in/uploads/photo_record/photo/381/BoysHostelBuliding.jpg" style="height:500px;width: 500px" ><a href = "/bhaskaracomplist"><button type="button" style="margin-left: 36%; margin-top: -65%" class="btn btn-warning btn-lg">Bhaskara</button></a></div>
-
-			 <div class="col-sm-3 col-md-4"><img src="http://photogallery.iiitb.ac.in/uploads/photo_record/photo/388/PhotofromKTejas_4_.jpg" style="height:500px;width: 500px" ><a href = "/lilavaticomplist"><button type="button" style="margin-left: 54%; margin-top: -65%" class="btn btn-warning btn-lg">Lilavati</button></a></div>
-			<div class="col-md-2"></div>
-		</div>
+		<div class="container" style="margin-top: 2%;">
+        			<div class="col-sm-3 col-md-3"><img src="/images/boy2.jpg" style="height:500px;width: 500px" ><a href = "/bhaskaracomplist"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Bhaskara</button></a></div>
+        			<div class="col-sm-3 col-md-3"></div>
+        			<div class="col-sm-3 col-md-3"><img src="/images/girl1.jpg" style="height:500px;width: 500px" ><a href = "/lilavaticomplist"><button type="button" style="margin-left: 99%;margin-top: 5%;" class="btn btn-primary">Lilavati</button></a></div>
+        		</div>
 	</body>
 </html>

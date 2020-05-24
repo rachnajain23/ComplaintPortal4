@@ -18,7 +18,7 @@
      	 response.sendRedirect("/studentlogin");
       }
 %>
-
+<br>
 <div class="container" align="right">
   <a  href="/change" class="btn btn-info" role="button">Change Password</a>
   <a  href="/studentlogout" class="btn btn-info" role="button">Log Out</a>

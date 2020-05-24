@@ -69,15 +69,17 @@
 	<div class="container">
 	<div class="banner-text">
 	<div class="banner-heading">
-	Testing COMPLAINT PORTAL FOR IIITB
+	| शिkayat |
 	</div>
+	<div class="banner-heading">
+    	IIITB Complaint Portal
+    	</div>
 	<div class="banner-sub-heading">
 	  24*7 UP for Complaints
 	</div>
 
 
-	<a href="/studentlogin" class="btn btn-info btn-warning text-dark" role="button">LOGIN</a><br>
-    Not Registered ? Register here -->
+	<a href="/studentlogin" class="btn btn-info btn-warning text-dark" role="button">LOGIN</a>
 	<a href="/register" class="btn btn-info btn-warning text-dark" role="button">REGISTER</a>
 
 
@@ -88,7 +90,7 @@
 <div class="container">
 	<div class="text-intro">
 	<h2>About Us</h2>
-		<p> Here, You can register your complaints regarding any issues !<br>
+		<p> Here, You can register your complaints regarding any issues!<br>
 		     Be it Food Complaint, Slow Internet Complaint, Room related issues, etc.
 		      </p>
 	</div>

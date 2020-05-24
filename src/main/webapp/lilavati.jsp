@@ -22,7 +22,7 @@
     	 response.sendRedirect("/wardenlogin");
      }
 %>
-
+<br>
 <div class="container" align="right">
   <a  href="/wardenlogout" class="btn btn-info" role="button">Log Out</a>
 </div>

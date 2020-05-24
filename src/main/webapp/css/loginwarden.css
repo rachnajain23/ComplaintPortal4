@@ -13,7 +13,18 @@ body {
 
 .sidenav {
     height: 100%;
-    background-image:url('/images/loginreg.jpg');
+    background-image:url('/images/img5.jpg');
+    background-size:cover;
+    height:100%;
+    width:100%;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -62,11 +73,12 @@ body {
 
 .login-main-text{
     margin-top: 20%;
-    padding: 60px;
+    padding: 70px;
+    color: #fff;
 }
 
 .login-main-text h2{
-    font-weight: 300;
+    color: #fff;
 }
 
 .btn-black{

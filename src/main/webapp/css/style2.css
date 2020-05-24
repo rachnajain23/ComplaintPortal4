@@ -47,10 +47,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     background-color: #212529;
 }
 .banner{
-	background-image:url('https://goldwallpapers.com/uploads/posts/college-wallpaper/college_wallpaper_024.jpg');
+	background-image:url('/images/pic3.jpg');
+	background-size:cover;
+	height:100%;
+	width:100%;
 	text-align: center;
     color: #fff;
-
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -68,6 +70,14 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     font-weight: 700;
     line-height: 100px;
     margin-bottom: 30px;
+	color:#fff;
+}
+.banner-m-heading{
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+    font-weight: 500;
+    line-height: 90px;
+    margin-bottom: 40px;
 	color:#fff;
 }
 .banner-sub-heading{

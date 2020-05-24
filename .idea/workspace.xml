@@ -6,8 +6,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66e42b31-64a9-4db5-8353-db6c33c148a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/webapp/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/webapp/css/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminlogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bhaskara.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bhaskara.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodcomlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodcomlogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/img7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lilavati.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lilavati.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/netcomlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/netcomlogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sacComplaint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sacComplaint.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sacComplaint2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sacComplaint2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/saclogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/saclogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sportcomlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sportcomlogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/wardenlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/wardenlogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomeNetcom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomeNetcom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomeadmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomeadmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomefcom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomefcom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomesac.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomesac.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomesportcom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomesportcom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomestudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomestudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcomewarden.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcomewarden.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/namanraj/demo/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/namanraj/demo/controller/StudentController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,23 +92,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1589804212989">
+    <state width="1807" height="134" key="GridCell.Tab.0.bottom" timestamp="1590305287478">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1589804212989" />
-    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1589804212988">
+    <state width="1807" height="134" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1590305287478" />
+    <state width="1807" height="134" key="GridCell.Tab.0.center" timestamp="1590305287478">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1589804212988" />
-    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1589804212988">
+    <state width="1807" height="134" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1590305287478" />
+    <state width="1807" height="134" key="GridCell.Tab.0.left" timestamp="1590305287477">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1589804212988" />
-    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1589804212989">
+    <state width="1807" height="134" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1590305287477" />
+    <state width="1807" height="134" key="GridCell.Tab.0.right" timestamp="1590305287478">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1589804212989" />
+    <state width="1807" height="134" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1590305287478" />
   </component>
 </project>

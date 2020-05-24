@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Internet Login</title>
-<link href="/css/login.css" rel="stylesheet" type="text/css">
+<link href="/css/logininternet.css" rel="stylesheet" type="text/css">
 <link href="/css/style2.css" rel="stylesheet" type="text/css">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

@@ -21,7 +21,7 @@
     	 response.sendRedirect("/fcomlogin");
      }
 %>
-
+<br>
 <div class="container" align="right">
   <a  href="/sportcomlogout" class="btn btn-info" role="button">Log Out</a>
 </div>

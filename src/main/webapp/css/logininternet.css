@@ -13,7 +13,7 @@ body {
 
 .sidenav {
     height: 100%;
-    background-image:url('/images/loginreg.jpg');
+    background-image:url('/images/2.jpg');
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -63,10 +63,12 @@ body {
 .login-main-text{
     margin-top: 20%;
     padding: 60px;
+    color: #fff;
 }
 
 .login-main-text h2{
     font-weight: 300;
+    color: #fff;
 }
 
 .btn-black{
