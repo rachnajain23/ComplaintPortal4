@@ -1,6 +1,8 @@
 package com.namanraj.demo.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -47,7 +49,13 @@ public class StudentController
 	@RequestMapping("/register-success")
 	public ModelAndView registerSuccess(Student student) {
 		ModelAndView mv = new ModelAndView();
-		studentrepo.save(student);
+		try {
+			studentrepo.save(student);
+		}
+		catch(Exception e) {
+			mv.setViewName("redirect:/register");
+			return mv;
+		}
 		String email = student.getEmail();
 		if(email.endsWith("@iiitb.org")) {
 			if(studentrepo.findByRollAndRoom(student.getRoll(), student.getRoom()) != null) {
@@ -161,7 +169,7 @@ public class StudentController
 	public ModelAndView studentDashboard(@PathVariable("roll") String roll , HttpSession session)
 	{
 		ModelAndView mv = new ModelAndView();
-		if((boolean)session.getAttribute("username").equals(roll)) {
+		try{if((boolean)session.getAttribute("username").equals(roll)) {
 			//System.out.println(session.getAttribute("username"));
 			mv.setViewName("welcomestudent");
 			Pageable firstPageWithTenElements = PageRequest.of(0, 10);
@@ -174,6 +182,10 @@ public class StudentController
 			return mv;
 		}
 		else {
+			mv.setViewName("redirect:/studentlogin");
+			return mv;
+		}
+		}catch(NullPointerException e) {
 			mv.setViewName("redirect:/studentlogin");
 			return mv;
 		}
