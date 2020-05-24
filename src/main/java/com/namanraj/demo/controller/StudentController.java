@@ -164,7 +164,7 @@ public class StudentController
 			//System.out.println(session.getAttribute("username"));
 			mv.setViewName("welcomestudent");
 			Pageable firstPageWithTenElements = PageRequest.of(0, 10);
-			Page<Complaint> list =(Page<Complaint>) comprepo.findByRollOrderByTimestamp(roll,firstPageWithTenElements);
+			Page<Complaint> list =(Page<Complaint>) comprepo.findByRollOrderByTimestampDesc(roll,firstPageWithTenElements);
 			//System.out.println(list.getNumberOfElements());
 			//System.out.println(list.getTotalPages());
 			//System.out.println(list.getTotalElements());

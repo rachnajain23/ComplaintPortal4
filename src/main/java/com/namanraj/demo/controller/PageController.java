@@ -24,7 +24,7 @@ public class PageController {
 	@GetMapping("/pages/{pageNo}")
     public String getPaginatedComplaints(Model model, @PathVariable int pageNo, HttpSession session) {
 		Pageable pageWithTenElements = PageRequest.of(pageNo, 10);
-		Page<Complaint> list = repo.findByRollOrderByTimestamp(session.getAttribute("username").toString(), pageWithTenElements);
+		Page<Complaint> list = repo.findByRollOrderByTimestampDesc(session.getAttribute("username").toString(), pageWithTenElements);
 		model.addAttribute("complaints" ,list);
 		model.addAttribute("currentpage",pageNo+1);
 		return "welcomestudent";

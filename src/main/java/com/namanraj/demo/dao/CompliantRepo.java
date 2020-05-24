@@ -18,7 +18,7 @@ public interface CompliantRepo extends JpaRepository<Complaint , Integer>
 {
 	List<Complaint> findByCtype(String ctype);
 	
-	Page<Complaint> findByRollOrderByTimestamp(String roll, Pageable pageable);
+	Page<Complaint> findByRollOrderByTimestampDesc(String roll, Pageable pageable);
 	
 	@Query(value = "SELECT * FROM complaint t WHERE t.ctype = 'Food Commitee'", nativeQuery=true)
 	Page<Complaint> findByFcom(Pageable pageable);
@@ -35,7 +35,7 @@ public interface CompliantRepo extends JpaRepository<Complaint , Integer>
 	@Query(value = "SELECT * FROM complaint t WHERE t.ctype = 'Sports Committee'", nativeQuery=true)
 	Page<Complaint> findByScom(Pageable pageable);
 	
-	@Query(value = "SELECT * FROM complaint t WHERE t.ctype = 'Internet Committee'", nativeQuery=true)
+	@Query(value = "SELECT * FROM complaint t WHERE t.ctype = 'Internet Commitee'", nativeQuery=true)
 	Page<Complaint> findByNetcom(Pageable pageable);
 	
 	@Modifying(clearAutomatically = true)
