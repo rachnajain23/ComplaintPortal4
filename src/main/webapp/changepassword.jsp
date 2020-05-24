@@ -81,14 +81,14 @@
                 <div class="form-group row">
                   <label class="col-lg-3 col-form-label form-control-label">Old Password</label>
                   <div class="col-lg-9">
-                    <input class="form-control" type="text" placeholder="Enter Old Password" name="oldpass">
+                    <input class="form-control" type="password" placeholder="Enter Old Password" name="oldpass">
                   </div>
                 </div>
                 
                 <div class="form-group row">
                   <label class="col-lg-3 col-form-label form-control-label">New Password</label>
                   <div class="col-lg-9">
-                    <input class="form-control" type="text" placeholder="Enter New Password" name="newpass">
+                    <input class="form-control" type="password" placeholder="Enter New Password" name="newpass">
                   </div>
                 </div>
                
