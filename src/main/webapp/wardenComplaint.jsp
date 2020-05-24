@@ -42,7 +42,7 @@ integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7Ar
 	<div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="well well-sm">
-          <form class="form-horizontal" action="view/${complaint.id}" >
+          <form class="form-horizontal" action="view/${complaint.roll}/${complaint.id}" >
           <fieldset>
             <legend class="text-center">Response</legend>
    		<div class="form-group col-sm-12">
