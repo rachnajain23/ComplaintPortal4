@@ -34,6 +34,14 @@ public class NotificationService
 		return password;
 	}
 	
+	public void sendStatusNotification(Student student,String status) throws MailException{
+		SimpleMailMessage mail = new SimpleMailMessage();
+		mail.setTo(student.getEmail());
+		mail.setFrom("mosipsingh@gmail.com");
+		mail.setSubject("Status has been updated");
+		mail.setText("Hi "+student.getName()+"Your status has been updated to: "+status);
+		javaMailSender.send(mail); 
+	}
 	public String passwordGenerator() {
 		String Capital_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
         String Small_chars = "abcdefghijklmnopqrstuvwxyz"; 

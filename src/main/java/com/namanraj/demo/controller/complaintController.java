@@ -41,6 +41,7 @@ import com.namanraj.demo.dao.StudentRepo;
 import com.namanraj.demo.model.Complaint;
 import com.namanraj.demo.model.Student;
 import com.namanraj.demo.model.Suggestion;
+import com.namanraj.demo.service.NotificationService;
 
 @RestController
 public class complaintController 
@@ -50,6 +51,9 @@ public class complaintController
 	
 	@Autowired
 	StudentRepo studentrepo;
+	
+	@Autowired
+	NotificationService notificationservice;
 	
 	 @Autowired
 	private RestHighLevelClient client;
@@ -169,12 +173,15 @@ public class complaintController
 		return mv;
 	}
 	
-	@GetMapping("foodcomplaint/view/{compid}")
+	@GetMapping("foodcomplaint/view/{comproll}/{compid}")
 	//@ResponseBody
-	public ModelAndView updateFoodComplaint(@PathVariable("compid") int compid , @RequestParam("status") String status ,
+	public ModelAndView updateFoodComplaint(@PathVariable("compid") int compid ,@PathVariable("comproll") String comproll, @RequestParam("status") String status ,
 			@RequestParam("message") String message) {
 
 		int id = repo.updateComplaint(status , message , compid);
+		//System.out.println("send mail---"+comproll);
+		Student student = studentrepo.findByRoll(comproll);
+		notificationservice.sendStatusNotification(student, status); 
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/fcomplist");
 		return mv;

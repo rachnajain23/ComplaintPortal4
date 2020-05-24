@@ -86,7 +86,6 @@ public class StudentController
 								 @RequestParam("newpass") String newpass) {
 		
 		ModelAndView mv = new ModelAndView();
-		System.out.println("controller----"+roll);
 		Student student = studentrepo.findByRoll(roll);
 		if(student.getPassword().equals(oldpass)) {
 			studentrepo.updatePassword(newpass, roll);
@@ -162,11 +161,11 @@ public class StudentController
 	{
 		ModelAndView mv = new ModelAndView();
 		if((boolean)session.getAttribute("username").equals(roll)) {
-			System.out.println(session.getAttribute("username"));
+			//System.out.println(session.getAttribute("username"));
 			mv.setViewName("welcomestudent");
 			Pageable firstPageWithTenElements = PageRequest.of(0, 10);
 			Page<Complaint> list =(Page<Complaint>) comprepo.findByRollOrderByTimestamp(roll,firstPageWithTenElements);
-			System.out.println(list.getNumberOfElements());
+			//System.out.println(list.getNumberOfElements());
 			//System.out.println(list.getTotalPages());
 			//System.out.println(list.getTotalElements());
 			mv.addObject("complaints" ,list);

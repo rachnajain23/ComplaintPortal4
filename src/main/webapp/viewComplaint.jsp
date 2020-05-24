@@ -45,7 +45,7 @@
 	<div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="well well-sm">
-          <form class="form-horizontal" action="view/${complaint.id}" >
+          <form class="form-horizontal" action="view/${complaint.roll}/${complaint.id}" >
           <fieldset>
             <legend class="text-center">Response</legend>
    		<div class="form-group col-sm-12">
