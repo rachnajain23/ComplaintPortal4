@@ -322,7 +322,7 @@ public class loginController
 	public ModelAndView feedback()
 	{
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("feedback.jsp");
+		mv.setViewName("feedback");
 		return mv;
 	}
 
