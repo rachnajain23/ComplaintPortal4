@@ -7,10 +7,10 @@
 <title>Register-Yourself</title>
 <link href="/css/login.css" rel="stylesheet" type="text/css">
 <link href="/css/style2.css" rel="stylesheet" type="text/css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-</head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script></head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
@@ -41,10 +41,23 @@
                      <input type="text" class="form-control" placeholder="Enter Name" name="name">
                   </div>
                   <div class="form-group">
+                     <label>Hostel</label><br>
+                     <label class="radio-inline">
+      			<input type="radio" name="hostel" value="Bhaskara" checked>Bhaskara&nbsp;
+    				</label>
+    			<label class="radio-inline">
+     				 <input type="radio" name="hostel" value="Lilavati">Lilavati&nbsp;
+    			</label>
+    			<label class="radio-inline">
+      			<input type="radio" name="hostel" value="Visvesaraya">Visvesaraya
+    			</label>
+                  </div>
+                  
+                  <div class="form-group">
                      <label>Room No.</label>
                      <input type="text" class="form-control" placeholder="Enter Room No." name="room">
                   </div>
-                  <button type="submit" class="btn btn-black">Register</button>
+                  <button type="submit" class="btn btn-black" style="color:white;">Register</button>
                </form>
             </div>
          </div>
