@@ -48,7 +48,7 @@
   </thead>
   <tbody>
 
-  <c:forEach items="${complaints}" var="comp">
+  <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Pending'}">
 	    <tr>
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
@@ -59,7 +59,7 @@
 		  </tr>
 	   </c:if>
    </c:forEach>
-  <c:forEach items="${complaints}" var="comp">
+  <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Accepted'}">
 	    <tr class="table-info">
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
@@ -71,7 +71,7 @@
 	   </c:if>
    </c:forEach>
 
-   <c:forEach items="${complaints}" var="comp">
+   <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Rejected'}">
 	    <tr class="table-danger">
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
@@ -83,7 +83,7 @@
 	   </c:if>
    </c:forEach>
 
-   <c:forEach items="${complaints}" var="comp">
+   <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Resolved'}">
 	    <tr class="table-success">
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
