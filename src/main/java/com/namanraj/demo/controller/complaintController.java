@@ -282,11 +282,13 @@ public class complaintController
 		return mv;
 	}
 	
-	@GetMapping("netcomplaint/view/{compid}")
-	public ModelAndView updateNetComplaint(@PathVariable("compid") int compid , @RequestParam("status") String status ,
+	@GetMapping("netcomplaint/view/{comproll}/{compid}")
+	public ModelAndView updateNetComplaint(@PathVariable("compid") int compid , @PathVariable("comproll") String comproll ,@RequestParam("status") String status ,
 			@RequestParam("message") String message) {
 
 		int id = repo.updateComplaint(status , message , compid);
+		Student student = studentrepo.findByRoll(comproll);
+		notificationservice.sendStatusNotification(student, status);
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/netcomplist");
 		return mv;
