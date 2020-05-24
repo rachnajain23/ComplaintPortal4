@@ -34,12 +34,12 @@ public class NotificationService
 		return password;
 	}
 	
-	public void sendStatusNotification(Student student,String status) throws MailException{
+	public void sendStatusNotification(Student student,String status,String title) throws MailException{
 		SimpleMailMessage mail = new SimpleMailMessage();
 		mail.setTo(student.getEmail());
 		mail.setFrom("mosipsingh@gmail.com");
 		mail.setSubject("Status has been updated");
-		mail.setText("Hi "+student.getName()+"Your status has been updated to: "+status);
+		mail.setText("Hi "+student.getName()+" The status of your complaint titled "+title+" has been updated to: "+status);
 		javaMailSender.send(mail); 
 	}
 	public String passwordGenerator() {

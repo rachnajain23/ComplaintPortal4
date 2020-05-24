@@ -56,6 +56,7 @@ integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7Ar
 		  <div class="form-group col-sm-12">
 		    <label for="exampleFormControlTextarea1">Message</label>
 		    <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" name = "message"></textarea>
+		    <input type="hidden" id="comptitle" name="comptitle" value="${complaint.comptitle}">
 		  </div>
 
     

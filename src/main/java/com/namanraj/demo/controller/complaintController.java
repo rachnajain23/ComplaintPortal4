@@ -176,12 +176,12 @@ public class complaintController
 	@GetMapping("foodcomplaint/view/{comproll}/{compid}")
 	//@ResponseBody
 	public ModelAndView updateFoodComplaint(@PathVariable("compid") int compid ,@PathVariable("comproll") String comproll, @RequestParam("status") String status ,
-			@RequestParam("message") String message) {
-
+			@RequestParam("message") String message , @RequestParam("comptitle") String title) {
+		//System.out.println("title--"+title); 
 		int id = repo.updateComplaint(status , message , compid);
 		//System.out.println("send mail---"+comproll);
 		Student student = studentrepo.findByRoll(comproll);
-		notificationservice.sendStatusNotification(student, status); 
+		notificationservice.sendStatusNotification(student, status,title); 
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/fcomplist");
 		return mv;
@@ -204,11 +204,11 @@ public class complaintController
 	@GetMapping("saccomplaint/view/{comproll}/{compid}")
 	//@ResponseBody
 	public ModelAndView updateSacComplaint(@PathVariable("compid") int compid ,@PathVariable("comproll") String comproll, @RequestParam("status") String status ,
-			@RequestParam("message") String message) {
+			@RequestParam("message") String message ,@RequestParam("comptitle") String title) {
 
 		int id = repo.updateComplaint(status , message , compid);
 		Student student = studentrepo.findByRoll(comproll);
-		notificationservice.sendStatusNotification(student, status);
+		notificationservice.sendStatusNotification(student, status,title);
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/saccomplist");
 		return mv;
@@ -231,11 +231,11 @@ public class complaintController
 	@GetMapping("wardencomplaint/view/{comproll}/{compid}")
 	//@ResponseBody
 	public ModelAndView updateWardenComplaint(@PathVariable("compid") int compid , @PathVariable("comproll") String comproll , @RequestParam("status") String status ,
-			@RequestParam("message") String message) {
+			@RequestParam("message") String message, @RequestParam("comptitle") String title) {
 
 		int id = repo.updateComplaint(status , message , compid);
 		Student student = studentrepo.findByRoll(comproll);
-		notificationservice.sendStatusNotification(student, status);
+		notificationservice.sendStatusNotification(student, status, title);
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/wardencomplist");
 		return mv;
@@ -258,11 +258,11 @@ public class complaintController
 	@GetMapping("sportcomplaint/view/{comproll}/{compid}")
 	//@ResponseBody
 	public ModelAndView updateSportComplaint(@PathVariable("compid") int compid ,@PathVariable("comproll") String comproll, @RequestParam("status") String status ,
-			@RequestParam("message") String message) {
+			@RequestParam("message") String message, @RequestParam("comptitle") String title) {
 
 		int id = repo.updateComplaint(status , message , compid);
 		Student student = studentrepo.findByRoll(comproll);
-		notificationservice.sendStatusNotification(student, status);
+		notificationservice.sendStatusNotification(student, status, title);
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/sportscomplist");
 		return mv;
@@ -284,11 +284,11 @@ public class complaintController
 	
 	@GetMapping("netcomplaint/view/{comproll}/{compid}")
 	public ModelAndView updateNetComplaint(@PathVariable("compid") int compid , @PathVariable("comproll") String comproll ,@RequestParam("status") String status ,
-			@RequestParam("message") String message) {
+			@RequestParam("message") String message, @RequestParam("comptitle") String title) {
 
 		int id = repo.updateComplaint(status , message , compid);
 		Student student = studentrepo.findByRoll(comproll);
-		notificationservice.sendStatusNotification(student, status);
+		notificationservice.sendStatusNotification(student, status, title);
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/netcomplist");
 		return mv;
