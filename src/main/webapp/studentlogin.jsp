@@ -61,7 +61,7 @@ if(session.getAttribute("type") == "admin"){
                      <input type="password" class="form-control" placeholder="Password" name="password">
                   </div>
                   <button type="submit" class="btn btn-black">Submit</button>
-                  <h6 align="left"><a href = "/forgot">Forgot Password</a></h6>
+                  <h6 align="left"><a href ="/forgot">Forgot Password</a></h6>
                </form>
 
             </div>

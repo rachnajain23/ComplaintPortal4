@@ -102,7 +102,7 @@ public class StudentController
 	@RequestMapping("/forgot")
 	public ModelAndView forgot() {
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("redirect:/forgotpassword");
+		mv.setViewName("/forgotpassword");
 		return mv;
 	}
 	
