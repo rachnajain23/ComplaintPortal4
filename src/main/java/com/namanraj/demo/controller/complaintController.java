@@ -251,12 +251,14 @@ public class complaintController
 		return mv;
 	}
 	
-	@GetMapping("sportcomplaint/view/{compid}")
+	@GetMapping("sportcomplaint/view/{comproll}/{compid}")
 	//@ResponseBody
-	public ModelAndView updateSportComplaint(@PathVariable("compid") int compid , @RequestParam("status") String status ,
+	public ModelAndView updateSportComplaint(@PathVariable("compid") int compid ,@PathVariable("comproll") String comproll, @RequestParam("status") String status ,
 			@RequestParam("message") String message) {
 
 		int id = repo.updateComplaint(status , message , compid);
+		Student student = studentrepo.findByRoll(comproll);
+		notificationservice.sendStatusNotification(student, status);
 		ModelAndView mv = new ModelAndView();
 	    mv.setViewName("redirect:/sportscomplist");
 		return mv;
