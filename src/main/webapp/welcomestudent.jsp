@@ -55,12 +55,10 @@
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Hey <%= (String)session.getAttribute("name") %></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/addComplaint">Add Complaint</a>
-          </li>
           
         </ul>
         <div class="form-inline my-2 my-lg-0">
+		<a  href="/addComplaint" class="btn btn-info nav-buttons" role="button">Add Complaint</a> &nbsp;&nbsp;
           <a  href="/change" class="btn btn-info nav-buttons" role="button">Change Password</a> &nbsp;&nbsp;
           <a  href="/studentlogout" class="btn btn-info nav-buttons" role="button">Log Out</a>
         </div>

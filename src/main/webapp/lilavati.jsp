@@ -68,78 +68,64 @@
 
 
 <br><br>
-  <c:if test = "${complaints.content.size() == 0}">
+   <c:if test = "${complaints.content.size() == 0}">
   <h1 class="text-center">No complaints yet. </h1>
-</c:if>
- <c:if test = "${complaints.content.size() > 0}">
+  </c:if>
+  <c:if test = "${complaints.content.size() > 0}">
 <table class="table table-striped table-hover">
 
-    <thead class="thead-dark">
+    <thead class="thead-dark text-center">
     <tr>
       <th  scope="col">Roll No</th>
       <th scope="col">Name</th>
-      <th scope="col">Room No</th>
       <th scope="col">Date</th>
+      <th scope="col">Complaint</th>
       <th scope="col">Status</th>
     </tr>
   </thead>
-  <tbody>
-
+  <tbody class="text-center">
   <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Pending'}">
 	    <tr>
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
 	      <td>${comp.name}</td>
-	      <td>${comp.room}</td>
 	      <td>${comp.timestamp}</td>
-	      <td>${comp.status}</td>
+        <td>${comp.comptitle}</td>
+	      <td class="text-center bg-secondary text-white">${comp.status}</td>
 		  </tr>
 	   </c:if>
-   </c:forEach>
-  <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Accepted'}">
-	    <tr class="table-info">
+	    <tr>
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
 	      <td>${comp.name}</td>
-	      <td>${comp.room}</td>
 	      <td>${comp.timestamp}</td>
-	      <td>${comp.status}</td>
+        <td>${comp.comptitle}</td>
+	      <td class="text-center bg-primary text-white">${comp.status}</td>
 		  </tr>
 	   </c:if>
-   </c:forEach>
-
-   <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Rejected'}">
-	    <tr class="table-danger">
+	    <tr>
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
 	      <td>${comp.name}</td>
-	      <td>${comp.room}</td>
 	      <td>${comp.timestamp}</td>
-	      <td>${comp.status}</td>
+        <td>${comp.comptitle}</td>
+	      <td class="text-center bg-danger text-white">${comp.status}</td>
 		  </tr>
 	   </c:if>
-   </c:forEach>
-
-   <c:forEach items="${complaints.content}" var="comp">
 	  <c:if test="${comp.status == 'Resolved'}">
-	    <tr class="table-success">
+	    <tr>
 	      <td><a href = "/wardencomplaint/${comp.id}">${comp.roll}</a></td>
 	      <td>${comp.name}</td>
-	      <td>${comp.room}</td>
 	      <td>${comp.timestamp}</td>
-	      <td>${comp.status}</td>
+        <td>${comp.comptitle}</td>
+	      <td class="text-center bg-success text-white">${comp.status}</td>
 		  </tr>
 	   </c:if>
    </c:forEach>
-
-
-
 
   </tbody>
 
 </table>
-
-
 <div class="d-flex">
 <ul class="pagination list-inline mx-auto justify-content-center">
  <c:forEach begin="0" end="${complaints.totalPages-1}" var="pno">
@@ -149,8 +135,6 @@
  </c:forEach>
  </ul>
  </div>
- </c:if>
-
-
+</c:if>
 </body>
 </html>
