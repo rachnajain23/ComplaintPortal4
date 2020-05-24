@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+console.log("hello");
   $('#comptitle').typeahead({
     highlight: true,
     hint : true
@@ -19,18 +19,10 @@ $(document).ready(function(){
          data : query
       }).done(function(response){
           var len = response.length;
-          //var titles = [];
+         
           console.log(len);
 
-        //  for( var i = 0; i<len; i++){
-        //     titles.push(response[i]['title']);
-             //var id = response[i]['id'];
-//              var fname = response[i]['fname'];
-
-//             $("#searchResult").append("<li value='"+id+"'>"+title+"</li>");
-
-          //}
-          // binding click event to li
+        
         return process(response);
       });
     },
