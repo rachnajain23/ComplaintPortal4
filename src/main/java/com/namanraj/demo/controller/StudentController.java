@@ -144,6 +144,7 @@ public class StudentController
 		if(student != null) {
 			session.setAttribute("username", roll);
 			session.setAttribute("name", student.getName());
+			session.setAttribute("type", "student");
 			mv.setViewName("redirect:/student/"+roll);
 			return mv;
 		}

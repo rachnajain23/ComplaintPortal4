@@ -47,6 +47,7 @@ public class loginController
 		ModelAndView mv = new ModelAndView();
 		if(loginrepo.findByUsernameAndPassword(user.getUsername(), user.getPassword()) != null) {
 			session.setAttribute("username", user.getUsername());
+			session.setAttribute("type", "sac");
 			mv.setViewName("redirect:/saccomplist");
 			return mv;
 		}
@@ -84,6 +85,7 @@ public class loginController
 		ModelAndView mv = new ModelAndView();
 		if(loginrepo.findByUsernameAndPassword(user.getUsername(), user.getPassword()) != null) {
 			session.setAttribute("username", user.getUsername());
+			session.setAttribute("type", "foodcom");
 			mv.setViewName("redirect:/fcomplist");
 			return mv;
 		}
@@ -121,6 +123,7 @@ public class loginController
 		ModelAndView mv = new ModelAndView();
 		if(loginrepo.findByUsernameAndPassword(user.getUsername(), user.getPassword()) != null) {
 			session.setAttribute("username", user.getUsername());
+			session.setAttribute("type", "warden");
 			mv.setViewName("redirect:/wardencomplist");
 			return mv;
 		}
@@ -178,6 +181,7 @@ public class loginController
 		ModelAndView mv = new ModelAndView();
 		if(loginrepo.findByUsernameAndPassword(user.getUsername(), user.getPassword()) != null) {
 			session.setAttribute("username", user.getUsername());
+			session.setAttribute("type", "sportscom");
 			mv.setViewName("redirect:/sportscomplist");
 			return mv;
 		}
@@ -217,6 +221,7 @@ public class loginController
 		ModelAndView mv = new ModelAndView();
 		if(loginrepo.findByUsernameAndPassword(user.getUsername(), user.getPassword()) != null) {
 			session.setAttribute("username", user.getUsername());
+			session.setAttribute("type", "intercom");
 			mv.setViewName("redirect:/netcomplist");
 			return mv;
 		}

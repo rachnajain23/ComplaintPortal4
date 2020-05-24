@@ -17,6 +17,7 @@
       if(session.getAttribute("username") == null){
      	 response.sendRedirect("/studentlogin");
       }
+      
 %>
 <br>
 <div class="container" align="right">

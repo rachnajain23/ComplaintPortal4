@@ -12,7 +12,30 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-
+<%
+response.setHeader("Cache-Control" , "no-cache , no-store , must-revalidate");
+if(session.getAttribute("type") == "student"){
+	  response.sendRedirect("/student/"+session.getAttribute("username"));
+}
+if(session.getAttribute("type") == "sac"){
+	  response.sendRedirect("/saccomplist");
+}
+if(session.getAttribute("type") == "foodcom"){
+	  response.sendRedirect("/fcomplist");
+}
+if(session.getAttribute("type") == "warden"){
+	  response.sendRedirect("/wardencomplist");
+}
+if(session.getAttribute("type") == "sportscom"){
+	  response.sendRedirect("/sportscomplist");
+}
+if(session.getAttribute("type") == "intercom"){
+	  response.sendRedirect("/netcomplist");
+}
+if(session.getAttribute("type") == "admin"){
+	  response.sendRedirect("/welcomeadmin");
+}
+%>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
 <a class="navbar-brand" href="/"><span>IIIT</span> Bangalore</a></nav>
 

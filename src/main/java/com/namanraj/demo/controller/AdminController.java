@@ -45,6 +45,7 @@ public class AdminController
 		if(loginrepo.findByUsernameAndPassword(user.getUsername(), user.getPassword()) != null) {
 			session.setAttribute("username", user.getUsername());
 			mv.setViewName("redirect:/welcomeadmin");
+			session.setAttribute("type", "admin");
 			return mv;
 		}
 		else {
