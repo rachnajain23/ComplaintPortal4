@@ -52,9 +52,11 @@
           </li>
           
         </ul>
+      <% if(session.getAttribute("username") != null){  %>
         <div class="form-inline my-2 my-lg-0">
 		  <a  href="/studentlogout" class="btn btn-info nav-buttons" role="button">Log Out</a>
         </div>
+      <% } %>
       </div>
     </nav>
 	      <div class="row justify-content-center">
