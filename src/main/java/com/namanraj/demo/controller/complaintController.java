@@ -76,8 +76,9 @@ public class complaintController
 	}
 	
 	  @PostMapping("/autosearch")
-	    public List<Suggestion> search(@RequestBody String query) throws IOException {
-	      //  System.out.println(query);
+	    public List<Suggestion> search(@RequestBody String query)  {
+		  try {
+		   System.out.println(query);
 	    	List<Suggestion> suggestions = new ArrayList<>();
 	        QueryBuilder matchQueryBuilder = QueryBuilders.matchPhraseQuery("title", query);
 	        SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
@@ -96,8 +97,12 @@ public class complaintController
 	        }
 	     //  System.out.println(suggestions.size());
 	        return suggestions;
-	    }	
-	
+	    }
+		  catch(IOException e) {
+			  System.out.println(e.getMessage());
+		  }
+		  return null;
+	  }
 	
 	/* -------  Add Complaint -----------*/
 	

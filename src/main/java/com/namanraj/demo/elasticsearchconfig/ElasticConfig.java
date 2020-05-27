@@ -40,7 +40,7 @@ public class ElasticConfig {
         credentialsProvider.setCredentials(AuthScope.ANY,new UsernamePasswordCredentials(userName, password));
         RestClientBuilder builder =RestClient.builder(new HttpHost(host, port, "http")).setHttpClientConfigCallback(httpClientBuilder -> httpClientBuilder.setDefaultCredentialsProvider(credentialsProvider));
         builder.setRequestConfigCallback(requestConfigBuilder -> requestConfigBuilder.setConnectTimeout(timeout * 1000).setSocketTimeout(timeout * 1000)
-                .setConnectionRequestTimeout(0));
+               .setConnectionRequestTimeout(0));
 
         RestHighLevelClient client = new RestHighLevelClient(builder);
         return client;
