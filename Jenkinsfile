@@ -23,3 +23,4 @@ app.push("latest")
 }
 echo "Trying to Push Docker Build to DockerHub"
 }
+}
