@@ -1,7 +1,4 @@
-
 FROM openjdk:8
-
-LABEL maintainer="naman11396@gmail.com"
 
 VOLUME /tmp
 EXPOSE 8087
