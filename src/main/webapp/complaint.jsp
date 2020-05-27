@@ -149,6 +149,7 @@
                       <option value="Hostel">
                         Hostel
                       </option>
+			    <option value="Internet Commitee">Internet</option>
                      
                     </select>
                   </div>
