@@ -9,7 +9,7 @@ stage('Build project'){
 	}
 stage('Build image') {
 /* This builds the actual image */
-app = docker.build("adigu13/calci-1")
+app = docker.build("shivani96/complaintportal")
 }
 stage('Test image') {
 app.inside {
