@@ -31,7 +31,7 @@
                <form action = "/register-success" method = "post">
                   <div class="form-group">
                      <label>Roll No.</label>
-                     <input type="text" class="form-control" placeholder="Enter Roll No." name="roll">
+                     <input type="text" class="form-control" placeholder="Enter Your Roll No." name="roll">
                   </div>
                   <div class="form-group">
                      <label>Email(College Id)</label>
