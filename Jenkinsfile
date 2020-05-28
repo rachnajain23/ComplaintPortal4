@@ -26,4 +26,10 @@ app.push("latest")
 }
 echo "Trying to Push Docker Build to DockerHub"
 }
+
+stage('Deploying image with rundeck') {
+     
+        build job: 'ComplaintPortal-rundeck'
+        
+      }
 }
