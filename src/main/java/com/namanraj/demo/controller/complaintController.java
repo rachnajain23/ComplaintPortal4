@@ -78,7 +78,7 @@ public class complaintController
 	  @PostMapping("/autosearch")
 	    public List<Suggestion> search(@RequestBody String query)  {
 		  try {
-		   System.out.println(query);
+		//   System.out.println(query);
 	    	List<Suggestion> suggestions = new ArrayList<>();
 	        QueryBuilder matchQueryBuilder = QueryBuilders.matchPhraseQuery("title", query);
 	        SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
