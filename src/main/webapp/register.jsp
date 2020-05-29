@@ -35,7 +35,7 @@
                   </div>
                   <div class="form-group">
                      <label>Email(College Id)</label>
-                     <input type="text" class="form-control" placeholder="Enter College Email Id" name="email">
+                     <input type="text" class="form-control" placeholder="Enter Your College Email Id" name="email">
                   </div>
                   <div class="form-group">
                      <label>Name</label>
