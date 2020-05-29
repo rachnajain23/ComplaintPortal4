@@ -11,11 +11,6 @@ stage('Build image') {
 /* This builds the actual image */
 app = docker.build("shivani96/complaintportal")
 }
-stage('Test image') {
-app.inside {
-}
-echo "Tests passed"
-}
 stage('Push image') {
 /*You would need to first register with DockerHub before you can push
 images to your account*/
